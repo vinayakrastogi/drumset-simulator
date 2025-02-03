@@ -1,0 +1,67 @@
+* {
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color:rgb(237, 237, 237);
+    margin: 0px;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.background .heading {
+    font-size: 4em;
+    font-weight: bolder;
+    margin-top: 1em;
+    color: rgb(33, 33, 33);
+}
+
+.background .info {
+    margin-top: 1em;
+    font-size: 1.3em;
+    color: rgb(48, 48, 48);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 232, 83);
+    padding: 0.5em;
+    margin-top: 4em;
+    border-radius: 2em;
+}
+
+.instrumentButton {
+    height: 10em;
+    width: 10em;
+    background-color: rgb(236, 236, 236);
+    margin: 0.5em;
+    border-radius: 1em;
+    transition: 1000ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instrumentButton:hover {
+    cursor: grab;
+    transition: 100ms;
+    transform: scale(1.03);
+    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.4);
+}
+.instrumentButton:active {
+    transform: scale(1.0);
+    box-shadow: -3px -3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.instrumentButton img {
+    height: 50%;
+    width: 50%;
+}
